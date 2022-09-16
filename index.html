@@ -117,7 +117,7 @@
               <tr>
                 <th>Nombre</th>
                 <th>País</th>
-                <th>Elo Rapid</th>
+                <th>Standard</th>
                 <th>Nacimiento</th>
               </tr>
             </thead>
@@ -159,7 +159,7 @@
     <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
     <script>
       $(document).ready(function () {
-        var url = "https://xfrancool.github.io/db.json";
+        var url = "https://xfrancool.github.io/dbn.json";
 
         $("#tabla").DataTable({
           responsive: true,
@@ -172,8 +172,8 @@
           },
           columns: [
             { data: "name" },
-            { data: "fed" },
-            { data: "sep" },
+            { data: "ps" },
+            { data: "str" },
             { data: "year" },
           ],
         });
