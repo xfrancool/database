@@ -28,24 +28,47 @@
       h1 {
         text-align: center;
         margin-top: 2px;
+        margin-bottom: 18px;
+        font-weight: bold;
       }
       table.dataTable thead {
         background-color: #5c3990;
         color: rgb(227, 230, 233);
       }
       tr:nth-child(even) {
-        background-color: rgb(223, 223, 225);
+        background-color: rgb(111, 175, 214);
       }
       tr:hover {
         font-weight: 500;
       }
 
+      p {
+        text-align: center;
+        margin-top: 10px;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border-radius: 0 0 5px 5px;
+      }
+      a {
+        text-decoration: none;
+        margin-left: 3px;
+        color: rgb(126, 165, 220);
+      }
+
+      #tabla {
+        border: 1px solid black;);
+      }
+
+      input {
+        border-radius: 4px;
+      }
       /*----Estilos de boostrap-----*/
 
       .dataTables_length {
         margin: 10px;
       }
-      .tabla_info {
+      #tabla_info {
         font-weight: bold;
       }
 
@@ -61,7 +84,10 @@
       label {
         font-size: 18px;
         margin-bottom: 4px;
+        font-weight: bold;
       }
+
+
 
       @media screen and (max-width: 768px) {
         .container {
@@ -92,6 +118,15 @@
           </table>
         </div>
       </div>
+
+      <footer>
+        <p>
+          Copyright © Todos los derechos reservados
+          <a href="https://portafolio-jobs.netlify.app/" target="_blank"
+            >Franeli</a
+          >
+        </p>
+      </footer>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
