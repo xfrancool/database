@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width,initial-scale=1,user-scalable=no"
     />
-    <title>DATABASE</title>
+    <title>Ofertas | Entresano</title>
     <link rel="shortcut icon" href="table.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
@@ -31,11 +31,14 @@
       .container {
         width: 80%;
       }
-      h1 {
+      h2 {
         text-align: center;
         margin-top: 2px;
         margin-bottom: 18px;
         font-weight: bold;
+      }
+      #logo {
+        text-align: center;
       }
       table.dataTable thead {
         background-color: #5c3990;
@@ -63,7 +66,7 @@
       }
 
       #tabla {
-        border: 1px solid black;);
+        border: 1px solid black;
       }
 
       input {
@@ -93,9 +96,6 @@
         font-weight: bold;
       }
 
-
-
-
       @media screen and (max-width: 768px) {
         .container {
           width: 100%;
@@ -112,13 +112,14 @@
             class="table table-bordered display nowrap"
             style="width: 100%"
           >
-            <h1>DATABASE CHESS</h1>
+            <img src="ico.png" alt="" id="logo" />
+            <!-- <h2>Ofertas 2X1</h2> -->
             <thead>
               <tr>
-                <th>Nombre</th>
-                <th>País</th>
-                <th>Standard</th>
-                <th>Nacimiento</th>
+                <th>Producto</th>
+                <th>Código</th>
+                <th>Gramos</th>
+                <th>Categoría</th>
               </tr>
             </thead>
             <tbody></tbody>
@@ -159,7 +160,7 @@
     <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
     <script>
       $(document).ready(function () {
-        var url = "https://xfrancool.github.io/dbn.json";
+        var url = "https://xfrancool.github.io/ofertas.json";
 
         $("#tabla").DataTable({
           responsive: true,
@@ -171,10 +172,10 @@
             dataSrc: "",
           },
           columns: [
-            { data: "name" },
-            { data: "ps" },
-            { data: "str" },
-            { data: "year" },
+            { data: "Producto" },
+            { data: "Cod" },
+            { data: "Gr" },
+            { data: "Catego" },
           ],
         });
       });
